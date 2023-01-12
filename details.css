@@ -1,0 +1,316 @@
+/* .head-separation {
+    border-width: 2px;
+    margin: auto;
+    border: none;
+    border-bottom: 5px solid #000;
+} */
+
+.ss-container {
+    padding: 2%;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.spent {
+    font-size: 1.4rem;
+    margin: 5vh auto 0;
+    height: 10vh;
+    background: #000;
+    color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colon {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.money-spent {
+    display: inline-block;
+}
+
+
+/* History */
+.history {
+    color: #000;
+    /* background-color: #fff; */
+    margin: 10vh auto;
+}
+
+.history .thin-separation {
+    margin-bottom: 5vh;
+}
+
+.transaction {
+    margin: 10px auto;
+    position: relative;
+    border: 2px solid #000;
+    border-right: 5px solid #000;
+    background-color: #ffc107;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.remove {
+    width: 2rem;
+    height: 2.1rem;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: none;
+    font-weight: 100;
+    background-color: #000;
+    color: #ffc107;
+    cursor: pointer;
+}
+
+.trans-name,
+.trans-amount {
+    display: inline-block;
+}
+
+.trans-name {
+    /* position: absolute;
+    left: 30px; */
+    font-weight: 600;
+    margin-left: 2.5rem;
+}
+
+.trans-amount {
+    position: absolute;
+    right: 15px;
+    bottom: 7px;
+
+}
+
+/* New transaction */
+.new-trans {
+    margin: 10vh auto;
+    color: #000;
+}
+
+.thin-separation {
+    border: none;
+    border-bottom: 1.5px solid #000;
+    margin-top: 5px;
+}
+
+.new-trans-form {
+    margin: 5vh auto 0;
+    position: relative;
+}
+
+.name-field,
+.amount-field {
+    position: relative;
+}
+
+.amount-field {
+    margin: 4vh auto 0;
+}
+
+.trans-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000;
+}
+
+.trans-input:focus {
+    outline: none;
+}
+
+.add-trans {
+    margin-top: 5vh;
+    height: 5vh;
+    width: 100%;
+    color: #000;
+    background-color: #ffc107;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.add-trans:hover,
+.add-trans:active {
+    outline: none;
+    color: #ffc107;
+    background-color: #000;
+}
+
+.add-trans:focus {
+    outline: none;
+}
+
+.final-btn {
+    width: 100%;
+    height: 8vh;
+    margin-top: 5vh;
+    border: 1px solid #000;
+    background-color: #ffc107;
+    color: #000;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.final-btn:hover,
+.final-btn:active,
+.final-btn:focus {
+    outline: none;
+    background-color: #000;
+    color: #ffc107;
+}
+
+.discard-btn {
+    margin-bottom: 10vh;
+}
+
+.ss-result {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.download-link {
+    margin: auto;
+    margin-bottom: 1%;
+    width: 50%;
+    text-align: center;
+    color: #000;
+}
+
+.download-link a {
+    text-decoration: none;
+}
+
+.download-link a:hover,
+.download-link a:focus,
+.download-link a:active {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .main-heading {
+        margin: 15% 0 0;
+    }
+
+    .main-heading h1 {
+        font-size: 1.4rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    .spent {
+        font-size: 1.2rem;
+        height: 6vh;
+    }
+
+    .history,
+    .new-trans {
+        margin: 7vh auto;
+    }
+
+    .history-head,
+    .new-trans-head {
+        font-size: 1.2rem;
+    }
+
+    .transactions-container p {
+        font-size: 0.8rem;
+    }
+
+    .transaction {
+        font-size: 0.8rem;
+        height: 1.6rem;
+    }
+
+    .remove {
+        height: 1.7rem;
+    }
+
+    .name-field,
+    .amount-field,
+    .trans-input {
+        font-size: 1rem;
+    }
+
+    .trans-input {
+        width: 50%;
+    }
+
+    .add-trans {
+        height: 3vh;
+    }
+
+    .final-btn {
+        height: 5vh;
+        font-size: 1rem;
+    }
+
+    .discard-btn {
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .main-heading h1 {
+        font-size: 1.2rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+
+    .spent {
+        font-size: 1rem;
+        height: 6vh;
+    }
+
+    .history,
+    .new-trans {
+        margin: 5vh auto;
+    }
+
+    .history-head,
+    .new-trans-head {
+        font-size: 1rem;
+    }
+
+    .name-field,
+    .amount-field {
+        font-size: 0.8rem;
+    }
+
+    .trans-input {
+        font-size: 0.8rem;
+    }
+
+    .amount-field {
+        margin: 2vh auto 0;
+    }
+
+    .add-trans {
+        font-size: 0.7rem;
+    }
+
+    .final-btn {
+        height: 4vh;
+        font-size: 0.8rem;
+    }
+}

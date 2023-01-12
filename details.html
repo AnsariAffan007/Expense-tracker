@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="details.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>ExpenseTracker</h1>
+    </nav>
+
+    <div class="container">
+
+        <div class="ss-container">
+
+            <div class="main-heading">
+                <h1 class="cart-name">
+                    Sunday Market
+                </h1>
+                <span class="date">
+                    <!-- Gets Updated by jquery -->
+                </span>
+            </div>
+            <!-- <hr class="thin-separation"> -->
+
+            <div class="spent">
+                <span class="spent-label">Spent</span>
+                <span class="colon">:</span>
+                <div class="money-spent">&#8377; 0</div>
+            </div>
+
+            <div class="history">
+                <h2 class="history-head">History</h2>
+                <hr class="thin-separation">
+
+                <div class="transactions-container">
+
+                    <!-- <div class="transaction">
+                        <button class="remove">X</button>
+                        <div class="trans-name">Aaloo</div>
+                        <span class="trans-amount">50</span>
+                    </div>
+                    
+                    <div class="transaction">
+                        <button class="remove">X</button>
+                        <div class="trans-name">Pyaaz</div>
+                        <span class="trans-amount">60</span>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="new-trans">
+            <h2 class="new-trans-head">Add New Transaction</h2>
+            <hr class="thin-separation">
+            <form class="new-trans-form">
+                <div class="name-field">
+                    <span class="item-name">Item Name: </span>
+                    <input type="text" class="item-name-input trans-input" autocomplete="off" required><br>
+                </div>
+                <div class="amount-field">
+                    <span class="item-amount">Amount: </span>
+                    <input type="number" class="item-amount-input trans-input" autocomplete="off" required>
+                </div>
+                <button onclick="addNewItem(event);" type="submit" class="add-trans">Add</button>
+            </form>
+        </div>
+
+        <hr class="thin-separation">
+
+        <button class="final-btn ss-btn" onclick="saveScreenshot();" type="submit">Capture Screenshot</button>
+        <button class="final-btn discard-btn" onclick="discardCart();" type="submit">Discard</button>
+
+    </div>
+
+    <div class="download-link">
+        <!-- <a class="a">Download Image</a> -->
+        <!-- <p>Image</p> -->
+    </div>
+
+    <div class="ss-result">
+
+    </div>
+    <footer class="footer">
+        <p>&#169; Ansari Mohammed Affan</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="details.js"></script>
+</body>
+
+</html>

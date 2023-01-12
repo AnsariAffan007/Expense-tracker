@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>ExpenseTracker</h1>
+    </nav>
+
+    <div class="container">
+        <div class="main-heading">
+            <h1>Create a Cart</h1>
+        </div>
+        <form class="name-desc-form" action="details.html">
+            <div class="shopping-name">
+                <span class="label name-label">Cart Name: </span>
+                <input class="input name-input" type="text" name="cartName" autocomplete="off" required><br>
+            </div>
+            <div class="shopping-date">
+                <span class="label date-label">Date: </span>
+                <input class="input date-input" type="date" name="cartDate" autocomplete="off" required><br>
+            </div>
+            <button class="create-tracker-btn" type="submit">Create</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&#169; Ansari Mohammed Affan</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
